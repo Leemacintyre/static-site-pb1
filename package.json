@@ -1,0 +1,33 @@
+{
+    "name": "static-challenge",
+    "version": "1.0.0",
+    "description": "**NB: Please do not fork this repository, to avoid your solution being visible from this repository's GitHub page. Please clone this repository and submit your solution as a separate repository.**",
+    "main": "codeReview.js",
+    "directories": {
+        "test": "tests"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "lts": "^1.2.0",
+        "showdown": "^2.1.0"
+    },
+    "devDependencies": {
+        "jest": "^29.0.2",
+        "nodemon": "^2.0.19",
+        "supertest": "^6.2.4"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js",
+        "test": "jest"
+    },
+    "jest": {
+        "testEnvironment": "node",
+        "coveragePathIgnorePatterns": [
+            "/node_modules/"
+        ]
+    },
+    "author": "",
+    "license": "ISC"
+}
